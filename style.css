@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #c4c4c4;
+  padding: 0 20px;
+}
+::selection {
+  color: #fff;
+  background: #664aff;
+}
+.wrapper {
+  max-width: 500px;
+  margin: 62px auto 0 auto;
+}
+.search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 13px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.users {
+  list-style: none;
+}
+.user-item {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #e3e3e3;
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 13px;
+  padding-bottom: 9px;
+  cursor: pointer;
+  border: 2px solid #000000;
+}
+.users-definition {
+  margin-top: 45px;
+}
+.user-defenition-list {
+  list-style: none;
+}
+.user-def-item {
+  position: relative;
+  list-style: none;
+  max-width: 500px;
+  padding: 8px 16px;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  background: #e27beb;
+}
+.user-property {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 400;
+
+  cursor: default;
+}
+.x-img {
+  position: absolute;
+  width: 41px;
+  height: 38.5px;
+  top: 31px;
+  right: 34px;
+  cursor: pointer;
+}
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+.search-input .autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+.search-input.active .autocom-box li {
+  display: block;
+}
+.autocom-box li:hover {
+  background: #efefef;
+}
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
