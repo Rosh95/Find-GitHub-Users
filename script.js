@@ -36,9 +36,9 @@ class Search {
                              <img class = "x-img" src="img/Vector 7.png"  alt = 'x'>
                              <img class = "x-img" src="img/Vector 8.png"  alt = 'x'> `;
     userDefenitionList.append(userElement);
-    if (closeUserDef) {
-      closeUserDef.addEventListener('click', () => this.closeUser());
-    }
+    userElement.addEventListener('click', () => {
+      userElement.remove();
+    });
   }
   async searchUsers() {
     try {
